@@ -1,0 +1,238 @@
+/* 
+==============================================
+CA Pradeep K. Goyal & Company - Responsive Styles
+==============================================
+*/
+
+/* Tablet Screens (up to 992px) */
+@media screen and (max-width: 992px) {
+    /* Header & Navigation */
+    .main-nav {
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: var(--white);
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        padding: 20px 0;
+        z-index: 1000;
+    }
+    
+    .main-nav.active {
+        display: block;
+    }
+    
+    .main-nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+        padding: 0 20px;
+    }
+    
+    .main-nav ul li {
+        margin-bottom: 15px;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .main-nav ul li a {
+        display: block;
+        padding: 12px;
+        border-radius: 5px;
+    }
+    
+    .mobile-menu-toggle {
+        display: block;
+    }
+    
+    /* Hero Section */
+    .hero-content {
+        flex-direction: column;
+    }
+    
+    .hero-video, .hero-text {
+        flex: none;
+        width: 100%;
+    }
+    
+    /* Vision & Mission Section */
+    .section-container {
+        flex-direction: column;
+    }
+    
+    .section-image, .section-content {
+        flex: none;
+        width: 100%;
+    }
+    
+    /* Key Achievements Section */
+    .key-achievements .container {
+        flex-direction: column;
+    }
+    
+    /* Footer Section */
+    .footer-content {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    /* About Page */
+    .about-content .container {
+        flex-direction: column;
+    }
+    
+    /* Contact Page */
+    .contact-info .container {
+        flex-direction: column;
+    }
+}
+
+/* Mobile Screens (up to 768px) */
+@media screen and (max-width: 768px) {
+    /* Header */
+    header {
+        padding: 15px 20px;
+    }
+    
+    .logo-text a {
+        font-size: 1.2rem;
+    }
+    
+    /* Hero Section */
+    .hero {
+        padding: 40px 0;
+    }
+    
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+    
+    .hero-text h2 {
+        font-size: 1.5rem;
+    }
+    
+    .hero-text h3 {
+        font-size: 1.2rem;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    /* Section Padding */
+    .vision-mission, 
+    .professional-journey, 
+    .key-achievements, 
+    .vote-section,
+    .community-leadership,
+    .election-manifesto,
+    .services-intro,
+    .services-grid,
+    .distinctions,
+    .past-positions,
+    .gallery-intro,
+    .gallery-grid,
+    .events-seminars,
+    .contact-info,
+    .business-hours,
+    .map-section {
+        padding: 50px 0;
+    }
+    
+    /* Section Titles */
+    .section-title {
+        font-size: 1.7rem;
+    }
+    
+    /* Timeline */
+    .timeline::before {
+        left: 15px;
+    }
+    
+    .timeline-item {
+        padding-left: 40px;
+    }
+    
+    .timeline-item::before {
+        left: 6px;
+        width: 18px;
+        height: 18px;
+    }
+    
+    /* Gallery */
+    .gallery-container,
+    .gallery-placeholder {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+    
+    /* Modal */
+    .modal-image {
+        height: 300px;
+    }
+    
+    /* Hours */
+    .hours-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    /* Form */
+    .contact-form {
+        padding: 20px;
+    }
+}
+
+/* Small Mobile Screens (up to 480px) */
+@media screen and (max-width: 480px) {
+    /* Hero Section */
+    .hero-text h1 {
+        font-size: 1.8rem;
+    }
+    
+    .hero-text h2 {
+        font-size: 1.3rem;
+    }
+    
+    .hero-text h3 {
+        font-size: 1.1rem;
+    }
+    
+    /* Page Titles */
+    .page-title h1 {
+        font-size: 2rem;
+    }
+    
+    /* Contact Items */
+    .contact-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    /* Gallery */
+    .gallery-filter {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .filter-btn {
+        width: 100%;
+    }
+    
+    /* Modal */
+    .modal-image {
+        height: 250px;
+    }
+    
+    /* Ballot Number */
+    .ballot-number {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .ballot-number span {
+        font-size: 2.5rem;
+    }
+}
